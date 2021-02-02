@@ -18,7 +18,12 @@ public class Main {
         System.out.println("Por faor digite um número: ");
         entradaJogador = Integer.parseInt(in.nextLine());
 
-        if ()
+        if (entradaJogador == numeroAleatorio) {
+            pontuacao += 10;
+        } else if (entradaJogador == (numeroAleatorio+1) || entradaJogador == (numeroAleatorio-1)) {
+            pontuacao += 5;
+        }
 
+        System.out.println("A sua pontuação final é: " + pontuacao);
     }
 }
